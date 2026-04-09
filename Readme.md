@@ -43,3 +43,9 @@ Improve layout, styling, and component-building skills through repetition and co
 ## Day 1 Preview
 
 ![Day 1 Screenshot](/DesktopScreenshotofDay1.png)
+
+- Day 2: Completed
+
+## Day 2 Preview
+
+![Day 2 Screenshot](/Day_2_DesktopScreenshot.png)
