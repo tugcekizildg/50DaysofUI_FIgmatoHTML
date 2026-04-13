@@ -1,0 +1,137 @@
+:root {
+  /* Colors */
+  --black-900: #050505;
+  --black-500: #111111;
+  --black-100: #333333;
+  --white-color: #ffffff;
+
+  /* Fonts */
+  --font-playfair: 'Playfair Display', serif;
+  --font-work-sans: 'Work Sans', sans-serif;
+
+  /* Globals */
+  --max-width: 1280px;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--black-100);
+  font-family: var(--font-work-sans);
+  font-size: 16px;
+  line-height: 1.5;
+  height: 100%;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+button {
+  cursor: pointer;
+  padding: 1.5rem 3rem;
+  border-radius: 1rem;
+  transition: background-color 300ms ease-in-out;
+  border: none;
+  font-family: var(--font-work-sans);
+  font-size: 1.5rem;
+}
+
+main {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  margin-block: 3rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column-reverse;
+    padding: 1rem;
+  }
+}
+
+h1 {
+  color: var(--black-900);
+  font-family: var(--font-playfair);
+  font-size: clamp(3.4375rem, 3.2394rem + 0.8451vw, 4rem);
+  line-height: 1.2;
+  margin-block-start: 3rem;
+}
+
+.left {
+  max-width: 643px;
+}
+
+.logo {
+  width: 101px;
+  height: 101px;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    margin-inline: auto;
+    margin-block-start: 1rem;
+  }
+}
+
+.left .content {
+  margin-left: 1rem;
+}
+
+.left .content p {
+  margin-block: 2rem;
+  font-size: clamp(1.125rem, 0.993rem + 0.5634vw, 1.5rem);
+}
+
+@media (max-width: 768px) {
+  .primary-btn {
+    margin-block-end: 1rem;
+  }
+}
+
+.primary-btn {
+  background-color: var(--black-900);
+  color: var(--white-color);
+}
+
+.primary-btn:focus,
+.primary-btn:hover {
+  background-color: var(--black-100);
+}
+
+.secondary-btn {
+  background-color: transparent;
+  border: 1px solid var(--black-100);
+}
+
+.secondary-btn:focus,
+.secondary-btn:hover {
+  background-color: var(--black-100);
+  color: var(--white-color);
+}
+
+.left .list {
+  display: flex;
+  align-items: center;
+  margin-block-start: 4.375rem;
+  border: 1px solid var(--black-500);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+}
+
+.left .list p {
+  line-height: 1.2;
+  color: var(--black-500);
+}
