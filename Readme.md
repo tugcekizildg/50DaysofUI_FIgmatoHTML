@@ -65,3 +65,7 @@ Improve layout, styling, and component-building skills through repetition and co
 - Day 6: Completed
 
 ![Day 6 Screenshot](./Day_6_DesktopScreenshot.png)
+
+- Day 7: Completed
+
+![Day 7 Screenshot](./Day_7_DesktopScreenshot.png)

@@ -1,0 +1,125 @@
+:root {
+  /* Colors */
+  --white-color: #fff;
+  --dark-black-color: rgb(37, 37, 37);
+  --medium-black-color: rgba(37, 37, 37, 0.8);
+  --light-black-color: rgba(37, 37, 37, 0.35);
+  --gradient1: rgba(0, 0, 0, 0);
+  --gradient2: rgba(0, 0, 0, 0.6);
+
+  /* Container */
+  --max-width: 1280px;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--white-color);
+  color: var(--medium-black-color);
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  height: 100%;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+header {
+  margin-block-end: 3rem;
+}
+
+h1 {
+  color: var(--dark-black-color);
+  font-size: clamp(3.75rem, 3.4859rem + 1.1268vw, 4.5rem);
+  line-height: 1.2;
+  font-weight: 500;
+  max-width: 20ch;
+}
+
+@media (max-width: 1080px) {
+  h1 {
+    text-align: center;
+  }
+}
+
+.container {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  margin-block: 2rem;
+}
+
+.cards {
+  display: flex;
+  gap: 1rem;
+  margin-block-start: 1rem;
+}
+
+@media (max-width: 1080px) {
+  .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.card-item {
+  width: 100%;
+  max-width: 316px;
+  overflow: hidden;
+}
+
+.card-number {
+  color: var(--light-black-color);
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.card-item p {
+  font-size: clamp(1rem, 0.868rem + 0.5634vw, 1.375rem);
+}
+
+.image-container {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  margin-block-start: 1.5rem;
+}
+
+.image-container img {
+  width: 316px;
+  height: 402px;
+  filter: grayscale(0.65);
+  opacity: 0.5;
+}
+
+.card-text {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  padding: 1rem;
+  background: linear-gradient(
+    to bottom,
+    var(--gradient1),
+    var(--gradient2) 100%
+  );
+}
+
+.card-text .card-title {
+  font-size: 1.5rem;
+}
+
+.card-text .card-desc {
+  font-size: 1rem;
+  color: var(--dark-black-color);
+}
