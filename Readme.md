@@ -50,53 +50,79 @@ Improve layout, styling, and component-building skills through repetition and co
 
 ![Day 2 Screenshot](/Day_2_DesktopScreenshot.png)
 
+## Day 3 Preview
+
 - Day 3: Completed
 
 ![Day 3 Screenshot](./Day_3_DesktopScreenshot.png)
+
+## Day 4 Preview
 
 - Day 4: Completed
 
 ![Day 4 Screenshot](./Day_4_DesktopScreenshot.png)
 
+## Day 5 Preview
+
 - Day 5: Completed
 
 ![Day 5 Screenshot](./Day_5_DesktopScreenshot.png)
+
+## Day 6 Preview
 
 - Day 6: Completed
 
 ![Day 6 Screenshot](./Day_6_DesktopScreenshot.png)
 
+## Day 7 Preview
+
 - Day 7: Completed
 
 ![Day 7 Screenshot](./Day_7_DesktopScreenshot.png)
+
+## Day 8 Preview
 
 - Day 8: Completed
 
 ![Day 8 Screenshot](./Day_8_DesktopScreenshot.png)
 
+## Day 9 Preview
+
 - Day 9: Completed
 
 ![Day 9 Screenshot](./Day_9_DesktopScreenshot.png)
+
+## Day 10 Preview
 
 - Day 10: Completed
 
 ![Day 10 Screenshot](./Day_10_DesktopScreenshot.png)
 
+## Day 11 Preview
+
 - Day 11: Completed
 
 ![Day 11 Screenshot](./Day_11_DesktopScreenshot.png)
+
+## Day 12 Preview
 
 - Day 12: Completed
 
 ![Day 12 Screenshot](./Day_12_DesktopScreenshot.png)
 
+## Day 13 Preview
+
 - Day 13: Completed
 
 ![Day 13 Screenshot](./Day_13_DesktopScreenshot.png)
 
+## Day 14 Preview
+
 - Day 14: Completed
 
 ![Day 14 Screenshot](./Day_14_DesktopScreenshot.png)
+
+## Day 15 Preview
 
 - Day 15: Completed
 
