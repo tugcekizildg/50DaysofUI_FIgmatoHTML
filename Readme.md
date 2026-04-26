@@ -145,3 +145,9 @@ Improve layout, styling, and component-building skills through repetition and co
 - Day 18: Completed
 
 ![Day 18 Screenshot](./Day_18_DesktopScreenshot.png)
+
+## Day 19 Preview
+
+- Day 19: Completed
+
+![Day 19 Screenshot](./Day_19_DesktopScreenshot.png)
