@@ -1,0 +1,134 @@
+:root {
+  /* Colors */
+  --blue-900: hsl(251, 28%, 8%);
+  --black-100: hsl(0, 0%, 85%);
+  --white-900: hsl(0, 0%, 100%);
+  --white-500: hsla(0, 0%, 100%, 0.5);
+
+  /* Container */
+  --max-width: 1280px;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  background-color: var(--blue-900);
+  background-image: url(../images/manwearingvr.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--black-100);
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+main {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  position: relative;
+  margin-block-end: 4rem;
+}
+
+@media (max-width: 1279px) {
+  main {
+    padding-inline: 1rem;
+  }
+}
+
+.content {
+  margin-block-start: 8rem;
+  max-width: 684px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-block-end: 104px;
+}
+
+.content h1 {
+  font-size: clamp(4.375rem, 3.9789rem + 1.6901vw, 5.5rem);
+  line-height: 1.2;
+}
+
+.content p {
+  font-size: clamp(1rem, 0.8239rem + 0.7512vw, 1.5rem);
+  max-width: 42ch;
+}
+
+.content button {
+  cursor: pointer;
+  width: fit-content;
+  font-size: clamp(1rem, 0.8239rem + 0.7512vw, 1.5rem);
+  line-height: 1.1;
+  font-family: inherit;
+  border: none;
+  background-color: var(--white-900);
+  color: var(--blue-900);
+  padding: 1.5rem 3rem;
+  border-radius: 1rem;
+  transition: background-color 300ms ease-in-out;
+}
+
+.content button:focus,
+.content button:hover {
+  background-color: var(--white-500);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+article {
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  padding: 2.75rem 3.3125rem;
+  border-radius: 1rem;
+  transition: transform 300ms ease-in-out;
+}
+
+article::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right bottom,
+    var(--white-900),
+    var(--white-500)
+  );
+  opacity: 0.15;
+  z-index: 0;
+  border-radius: 1.5rem;
+  border: 1px solid var(--white-800);
+}
+
+.cards > * {
+  position: relative;
+  z-index: 1;
+}
+
+article:hover {
+  transform: translateY(-5px);
+}
+
+article h2 {
+  margin-block-end: 1rem;
+}
+
+article p {
+  font-size: clamp(1rem, 0.912rem + 0.3756vw, 1.25rem);
+  max-width: 30ch;
+  font-weight: 300;
+}
