@@ -38,134 +38,132 @@ Improve layout, styling, and component-building skills through repetition and co
 
 ## Progress
 
-- Day 1: Completed
-
-## Day 1 Preview
-
-![Day 1 Screenshot](/DesktopScreenshotofDay1.png)
-
-- Day 2: Completed
-
-## Day 2 Preview
-
-![Day 2 Screenshot](/Day_2_DesktopScreenshot.png)
-
-## Day 3 Preview
-
-- Day 3: Completed
-
-![Day 3 Screenshot](./Day_3_DesktopScreenshot.png)
-
-## Day 4 Preview
-
-- Day 4: Completed
-
-![Day 4 Screenshot](./Day_4_DesktopScreenshot.png)
-
-## Day 5 Preview
-
-- Day 5: Completed
-
-![Day 5 Screenshot](./Day_5_DesktopScreenshot.png)
-
-## Day 6 Preview
-
-- Day 6: Completed
-
-![Day 6 Screenshot](./Day_6_DesktopScreenshot.png)
-
-## Day 7 Preview
-
-- Day 7: Completed
-
-![Day 7 Screenshot](./Day_7_DesktopScreenshot.png)
-
-## Day 8 Preview
-
-- Day 8: Completed
-
-![Day 8 Screenshot](./Day_8_DesktopScreenshot.png)
-
-## Day 9 Preview
-
-- Day 9: Completed
-
-![Day 9 Screenshot](./Day_9_DesktopScreenshot.png)
-
-## Day 10 Preview
-
-- Day 10: Completed
-
-![Day 10 Screenshot](./Day_10_DesktopScreenshot.png)
-
-## Day 11 Preview
-
-- Day 11: Completed
-
-![Day 11 Screenshot](./Day_11_DesktopScreenshot.png)
-
-## Day 12 Preview
-
-- Day 12: Completed
-
-![Day 12 Screenshot](./Day_12_DesktopScreenshot.png)
-
-## Day 13 Preview
-
-- Day 13: Completed
-
-![Day 13 Screenshot](./Day_13_DesktopScreenshot.png)
-
-## Day 14 Preview
-
-- Day 14: Completed
-
-![Day 14 Screenshot](./Day_14_DesktopScreenshot.png)
-
-## Day 15 Preview
-
-- Day 15: Completed
-
-![Day 15 Screenshot](./Day_15_DesktopScreenshot.png)
-
-## Day 16 Preview
-
-- Day 16: Completed
-
-![Day 16 Screenshot](./Day_16_DesktopScreenshot.png)
-
-## Day 17 Preview
-
-- Day 17: Completed
-
-![Day 17 Screenshot](./Day_17_DesktopScreenshot.png)
-
-## Day 18 Preview
-
-- Day 18: Completed
-
-![Day 18 Screenshot](./Day_18_DesktopScreenshot.png)
-
-## Day 19 Preview
-
-- Day 19: Completed
-
-![Day 19 Screenshot](./Day_19_DesktopScreenshot.png)
-
-## Day 20 Preview
-
-- Day 20: Completed
-
-![Day 20 Screenshot](./Day_20_DesktopScreenshot.png)
-
-## Day 21 Preview
-
-- Day 21: Completed
-
-![Day 21 Screenshot](./Day_21_DesktopScreenshot.png)
-
-## Day 22 Preview
-
-- Day 22: Completed
-
-![Day 22 Screenshot](./Day_22_DesktopScreenshot.png)
+<table>
+<tr>
+<td align="center">
+<strong>Day 1</strong><br>
+<img src="./DesktopScreenshotofDay1.png" width="250">
+</td>
+
+<td align="center">
+<strong>Day 2</strong><br>
+<img src="./Day_2_DesktopScreenshot.png" width="250">
+</td>
+
+<td align="center">
+<strong>Day 3</strong><br>
+<img src="./Day_3_DesktopScreenshot.png" width="250">
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<strong>Day 4</strong><br>
+<img src="./Day_4_DesktopScreenshot.png" width="250">
+</td>
+
+<td align="center">
+<strong>Day 5</strong><br>
+<img src="./Day_5_DesktopScreenshot.png" width="250">
+</td>
+
+<td align="center">
+<strong>Day 6</strong><br>
+<img src="./Day_6_DesktopScreenshot.png" width="250">
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<strong>Day 7</strong><br>
+<img src="./Day_7_DesktopScreenshot.png" width="250">
+</td>
+
+<td align="center">
+<strong>Day 8</strong><br>
+<img src="./Day_8_DesktopScreenshot.png" width="250">
+</td>
+
+<td align="center">
+<strong>Day 9</strong><br>
+<img src="./Day_9_DesktopScreenshot.png" width="250">
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<strong>Day 10</strong><br>
+<img src="./Day_10_DesktopScreenshot.png" width="250">
+</td>
+
+<td align="center">
+<strong>Day 11</strong><br>
+<img src="./Day_11_DesktopScreenshot.png" width="250">
+</td>
+
+<td align="center">
+<strong>Day 12</strong><br>
+<img src="./Day_12_DesktopScreenshot.png" width="250">
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<strong>Day 13</strong><br>
+<img src="./Day_13_DesktopScreenshot.png" width="250">
+</td>
+
+<td align="center">
+<strong>Day 14</strong><br>
+<img src="./Day_14_DesktopScreenshot.png" width="250">
+</td>
+
+<td align="center">
+<strong>Day 15</strong><br>
+<img src="./Day_15_DesktopScreenshot.png" width="250">
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<strong>Day 16</strong><br>
+<img src="./Day_16_DesktopScreenshot.png" width="250">
+</td>
+
+<td align="center">
+<strong>Day 17</strong><br>
+<img src="./Day_17_DesktopScreenshot.png" width="250">
+</td>
+
+<td align="center">
+<strong>Day 18</strong><br>
+<img src="./Day_18_DesktopScreenshot.png" width="250">
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<strong>Day 19</strong><br>
+<img src="./Day_19_DesktopScreenshot.png" width="250">
+</td>
+
+<td align="center">
+<strong>Day 20</strong><br>
+<img src="./Day_20_DesktopScreenshot.png" width="250">
+</td>
+
+<td align="center">
+<strong>Day 21</strong><br>
+<img src="./Day_21_DesktopScreenshot.png" width="250">
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<strong>Day 22</strong><br>
+<img src="./Day_22_DesktopScreenshot.png" width="250">
+</td>
+<td></td>
+<td></td>
+</tr>
+</table>
