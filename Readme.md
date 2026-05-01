@@ -166,6 +166,9 @@ Improve layout, styling, and component-building skills through repetition and co
 <td align="center">
 <strong>Day 23</strong><br>
 <img src="./Day_23_DesktopScreenshot.png" width="250"></td>
-<td></td>
+<td align="center">
+<strong>Day 24</strong><br>
+<img src="./Day_24_DesktopScreenshot.png" width="250">
+</td>
 </tr>
 </table>
