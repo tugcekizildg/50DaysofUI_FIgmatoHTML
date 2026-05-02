@@ -1,0 +1,147 @@
+:root {
+  /* Colors */
+  --black-900: hsl(0, 0%, 0%);
+  --black-600: hsla(0, 0%, 0%, 0.63);
+  --black-400: hsla(0, 0%, 0%, 0.4);
+  --white-900: hsl(0, 0%, 100%);
+  --blue-900: hsl(214, 98%, 65%);
+  --blue-800: hsl(214, 98%, 50%);
+
+  /* Container */
+  --max-width: 1280px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('../images/yoga.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--white-900);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+#main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  gap: 300px;
+  position: relative;
+}
+
+@media (max-width: 1110px) {
+  #main {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #main {
+    padding-inline: 1rem;
+  }
+}
+
+.content {
+  max-width: 600px;
+  max-height: 636px;
+  margin-block-start: 200px;
+  position: relative;
+  backdrop-filter: blur(2px);
+  padding: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 2rem;
+  }
+}
+
+.content::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    var(--black-900),
+    var(--black-600) 40%,
+    var(--black-400)
+  );
+  opacity: 0.4;
+  z-index: 0;
+  border-radius: 1.5rem;
+}
+
+.content > * {
+  position: relative;
+  z-index: 1;
+}
+
+.content h1 {
+  font-size: clamp(4.125rem, 3.993rem + 0.5634vw, 4.5rem);
+  font-weight: 500;
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+.content p {
+  font-size: clamp(1rem, 0.868rem + 0.5634vw, 1.375rem);
+  text-wrap: pretty;
+}
+
+.content button {
+  width: fit-content;
+  cursor: pointer;
+  font-size: clamp(1rem, 0.868rem + 0.5634vw, 1.375rem);
+  font-family: inherit;
+  border: none;
+  background-color: var(--blue-900);
+  color: var(--white-900);
+  padding: 0.75rem 2.5rem;
+  border-radius: 999px;
+  transition: background-color 300ms ease-in-out;
+}
+
+.content button:hover {
+  background-color: var(--blue-800);
+}
+
+.images-right {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 1100px) {
+  .images-right {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .images-right {
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+  }
+}
