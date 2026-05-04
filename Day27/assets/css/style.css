@@ -1,0 +1,230 @@
+:root {
+  /* Colors */
+  --white-900: hsl(0, 0%, 100%);
+  --black--900: hsl(0, 0%, 15%);
+  --black--600: hsla(0, 0%, 15%, 0.6);
+  --black--200: hsla(0, 0%, 15%, 0.2);
+  --green--900: hsl(178, 40%, 12%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--white-900);
+  color: var(--white-900);
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  object-fit: cover;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-block-end: 4rem;
+}
+
+.top {
+  min-height: calc(100vh - 148px);
+  background-image: url('../images/heroimage.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  margin-block-end: 4rem;
+}
+
+.top .content {
+  max-width: 581px;
+  margin-block-start: 90px;
+  margin-left: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+@media (max-width: 1280px) {
+  .top .content {
+    margin-block-start: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .top .content {
+    margin-block-start: 2rem;
+    margin-left: 2rem;
+  }
+}
+
+.top .content h1 {
+  font-size: clamp(3.75rem, 3.4859rem + 1.1268vw, 4.5rem);
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.top .content p {
+  font-size: clamp(1.125rem, 1.037rem + 0.3756vw, 1.375rem);
+}
+
+.top .content button {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: clamp(1.125rem, 1.037rem + 0.3756vw, 1.375rem);
+  width: fit-content;
+  border: none;
+  padding: 1.5rem 3.5rem;
+  border-radius: 2.5rem;
+  background-color: var(--white-900);
+  color: var(--green--900);
+  transition:
+    background-color 300ms ease-in-out,
+    color 300ms ease-in-out;
+}
+
+.top .content button:focus,
+.top .content button:hover {
+  background-color: var(--green--900);
+  color: var(--white-900);
+}
+
+.bottom {
+  max-width: 1312px;
+  height: 168px;
+  margin-inline: auto;
+  margin-top: -6rem;
+  border-radius: 2rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding-block-end: 2rem;
+}
+
+@media (max-width: 1309px) {
+  .bottom {
+    max-width: unset;
+  }
+}
+
+@media (max-width: 1010px) {
+  .bottom {
+    overflow: visible;
+  }
+}
+
+@media (max-width: 375px) {
+  .bottom {
+    margin-top: -2rem;
+  }
+}
+
+.bottom .image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1010px) {
+  .bottom .image-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+    padding-inline: 2rem;
+  }
+}
+
+.bottom .image-wrapper img {
+  width: 218px;
+  height: 168px;
+  object-fit: cover;
+  position: relative;
+  z-index: 0;
+  text-align: center;
+}
+
+@media (max-width: 1309px) {
+  .bottom .image-wrapper img {
+    width: 168px;
+    height: 168px;
+  }
+}
+
+@media (max-width: 1010px) {
+  .bottom .image-wrapper img {
+    width: 600px;
+    height: auto;
+    border-radius: 2rem;
+  }
+}
+
+.bottom .image-wrapper .img {
+  position: relative;
+}
+
+.bottom .image-wrapper .img p {
+  color: var(--white-900);
+  position: absolute;
+  bottom: 0;
+  font-size: clamp(0.875rem, 0.743rem + 0.5634vw, 1.25rem);
+  font-weight: 500;
+  line-height: 1.3;
+  width: 100%;
+  max-width: 218px;
+  text-align: center;
+  z-index: 1;
+  padding-block-end: 1rem;
+}
+
+@media (max-width: 1309px) {
+  .bottom .image-wrapper .img p {
+    max-width: 168px;
+  }
+}
+
+@media (max-width: 1010px) {
+  .bottom .image-wrapper .img p {
+    display: block;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    font-size: 1.25rem;
+  }
+}
+
+.bottom .image-wrapper .img p::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, var(--black--600), var(--black--200));
+  z-index: -1;
+}
+
+@media (max-width: 1010px) {
+  .bottom .image-wrapper .img p::after {
+    display: none;
+  }
+}
