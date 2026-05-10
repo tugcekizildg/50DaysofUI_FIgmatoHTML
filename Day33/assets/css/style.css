@@ -1,0 +1,274 @@
+:root {
+  /* Colors */
+  --white-900: #ffffff;
+  --white-800: #fdfeff;
+  --black-900: #000000;
+  --black-800: #202020;
+  --black-700: #252525;
+  --black-500: #333333;
+  --yellow-500: #d7a94f;
+  --pink-500: #efbdd9;
+  --blue-500: #79bbe3;
+  --purple-500: #685fd4;
+
+  /* Container */
+  --max-width: 1280px;
+
+  /* Fonts */
+  --font-inter: 'Inter', sans-serif;
+  --font-zilla: 'Zilla Slab', serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--white-800);
+  color: var(--black-700);
+  font-family: var(--font-inter);
+  font-size: 16px;
+  line-height: 1.5;
+  height: 100%;
+}
+
+@media (max-width: 1280px) {
+  body {
+    padding-inline: 1rem;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  display: flex;
+  gap: 69px;
+  margin-block-end: 4rem;
+}
+
+@media (max-width: 915px) {
+  main {
+    flex-direction: column;
+  }
+}
+
+.left {
+  margin-block-start: 112px;
+  max-width: 525px;
+}
+
+@media (max-width: 915px) {
+  .left {
+    margin-inline: auto;
+    margin-block-start: 2rem;
+  }
+}
+
+.rainbow {
+  margin-block-end: 1.5rem;
+}
+
+.left .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.left .content h1 {
+  font-size: clamp(3.125rem, 2.993rem + 0.5634vw, 3.5rem);
+  line-height: 1.2;
+  font-family: var(--font-zilla);
+}
+
+.left .content p {
+  font-size: clamp(1rem, 0.8239rem + 0.7512vw, 1.5rem);
+}
+
+.left .content button {
+  font-family: inherit;
+  font-size: clamp(1rem, 0.868rem + 0.5634vw, 1.375rem);
+  width: fit-content;
+  border: none;
+  cursor: pointer;
+  background-color: var(--black-800);
+  color: var(--white-900);
+  padding: 1.5rem 2.5rem;
+  border-radius: 2.5rem;
+  line-height: 1;
+  transition: background-color 300ms ease-in-out;
+}
+
+.left .content button:hover {
+  background-color: var(--purple-500);
+}
+
+.left .quote {
+  margin-block: 5rem;
+  border: 2px solid var(--black-500);
+  padding: 1.5rem;
+  box-shadow: 10px 12px var(--black-500);
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.left .quote:hover {
+  transform: translate(10px, 12px);
+  box-shadow: none;
+}
+
+.left .quote p {
+  font-size: 15px;
+  font-weight: 300;
+  background-color: var(--black-500);
+  color: var(--white-900);
+  padding: 1rem;
+}
+
+.left .social-container {
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+@media (max-width: 915px) {
+  .left .social-container {
+    justify-content: center;
+  }
+}
+
+.left .social-container .icon path {
+  transition: all 300ms ease-in-out;
+}
+
+.left .social-container .icon.facebook:hover path {
+  fill: var(--blue-500);
+}
+
+.left .social-container .icon.twitter:hover path {
+  fill: var(--purple-500);
+}
+
+.left .social-container .icon.instagram:hover path {
+  fill: var(--yellow-500);
+}
+
+.left .social-container .icon.youtube:hover path {
+  fill: var(--pink-500);
+}
+
+.right {
+  position: relative;
+  max-width: 722px;
+}
+
+@media (max-width: 915px) {
+  .right {
+    margin-inline: auto;
+  }
+}
+
+.grid-img-container {
+  display: grid;
+  grid-template-areas:
+    'circle-text blondy-woman flower'
+    'bnwman bnwwoman bnwwoman'
+    'bnwman neonwoman curlywoman'
+    'asterisk neonwoman butterfly';
+  margin-block-start: 4rem;
+}
+
+@media (max-width: 1158px) {
+  .grid-img-container {
+    grid-template-areas:
+      'circle-text blondy-woman'
+      'bnwman neonwoman'
+      'bnwwoman bnwwoman'
+      'flower  butterfly'
+      'asterisk curlywoman';
+  }
+}
+
+@media (max-width: 915px) {
+  .grid-img-container {
+    grid-template-areas:
+      'circle-text blondy-woman flower'
+      'bnwman bnwwoman bnwwoman'
+      'bnwman neonwoman curlywoman'
+      'asterisk neonwoman butterfly';
+
+    margin-block-start: 1rem;
+  }
+}
+
+.grid-img-container img,
+.grid-img-container svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.circle-text {
+  grid-area: circle-text;
+  background-color: var(--yellow-500);
+  padding: 17px 27px;
+  object-fit: contain !important;
+}
+
+.blondy-woman {
+  grid-area: blondy-woman;
+}
+
+.flower {
+  grid-area: flower;
+  background-color: var(--pink-500);
+  padding: 1rem 1.65rem;
+}
+
+.bnwman {
+  grid-area: bnwman;
+}
+
+.bnwwoman {
+  grid-area: bnwwoman;
+}
+
+.neonwoman {
+  grid-area: neonwoman;
+}
+
+.curlywoman {
+  grid-area: curlywoman;
+}
+
+.asterisk {
+  grid-area: asterisk;
+  background-color: var(--blue-500);
+  padding: 20px 36px;
+}
+
+.butterfly {
+  grid-area: butterfly;
+  background-color: var(--purple-500);
+  padding: 35px 45px;
+}
