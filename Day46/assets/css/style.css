@@ -1,0 +1,178 @@
+:root {
+  /* Colors */
+  --black-900: #181818;
+  --white-900: #ffffff;
+  --white-500: hsla(0, 0%, 100%, 0.5);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  background-color: var(--black-900);
+  color: var(--white-900);
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+main {
+  display: flex;
+  min-height: 100vh;
+}
+
+@media (max-width: 800px) {
+  main {
+    flex-direction: column;
+  }
+}
+
+.left,
+.right {
+  width: 50%;
+  position: relative;
+}
+
+@media (max-width: 800px) {
+  .left,
+  .right {
+    width: 100%;
+  }
+}
+
+/* Left Side */
+
+.left {
+  background-image: url('../images/leftbg.png');
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 4rem;
+}
+
+.pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.left .content {
+  margin-block-start: 537px;
+  max-width: 532px;
+  margin-inline: auto;
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .left .content {
+    margin-block-end: 4rem;
+  }
+}
+
+.left .content p {
+  font-size: clamp(1rem, 0.8239rem + 0.7512vw, 1.5rem);
+  text-align: center;
+}
+
+.left .content button {
+  text-align: center;
+  width: fit-content;
+  margin-inline: auto;
+  border: none;
+  cursor: pointer;
+  background-color: var(--white-900);
+  color: var(--black-900);
+  font-family: inherit;
+  font-size: clamp(1rem, 0.868rem + 0.5634vw, 1.375rem);
+  line-height: 1;
+  padding: 1.5rem 3.5rem;
+  border-radius: 2.5rem;
+  transition: background-color 300ms ease-in-out;
+}
+
+.left .content button:focus,
+.left .content button:hover {
+  background-color: var(--white-500);
+}
+
+/* Right Side */
+
+.right {
+  background-image: url('../images/rightbg.png');
+  background-size: cover;
+  background-position: center;
+  padding-inline: 4rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/noise.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.d-letter {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.right h1 {
+  font-size: clamp(2.5rem, 2.1479rem + 1.5023vw, 3.5rem);
+  line-height: 1.2;
+  position: relative;
+  z-index: 10;
+  margin-block-start: 134px;
+  margin-block-end: 4rem;
+  max-width: 15ch;
+}
+
+.right .content-wrapper {
+  position: relative;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 4rem;
+  margin-block-end: 4rem;
+}
+
+.right .content-wrapper h2 {
+  font-size: clamp(2.25rem, 2.0739rem + 0.7512vw, 2.75rem);
+  color: var(--white-500);
+  line-height: 1.2;
+  font-weight: 900;
+  margin-block-end: 1.5rem;
+}
+
+.right .content-wrapper p {
+  font-size: clamp(1rem, 0.8239rem + 0.7512vw, 1.5rem);
+}
