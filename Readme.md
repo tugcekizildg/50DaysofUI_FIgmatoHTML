@@ -302,5 +302,10 @@ Improve layout, styling, and component-building skills through repetition and co
 <img src="./screenshots/Day_47_DesktopScreenshot.png" width="250">
 </td>
 
+<td align="center">
+<strong>Day 48</strong><br>
+<img src="./screenshots/Day_48_DesktopScreenshot.png" width="250">
+</td>
+
 </tr>
 </table>
