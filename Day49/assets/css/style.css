@@ -1,0 +1,168 @@
+:root {
+  /* Colors */
+  --black-900: oklch(19.242% 0.01456 272.498);
+  --black-100: oklch(88.531% 0.0001 271.152);
+  --white-900: oklch(100% 0.00011 271.152);
+
+  /* Font */
+  --font-nunito: 'Nunito Sans', sans-serif;
+  --font-times: 'Times New Roman', Times, serif;
+
+  /* Container */
+  --max-width: 1280px;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  background-color: var(--white-900);
+  color: var(--black-900);
+  background-image: url('../images/bgimage.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: var(--font-nunito);
+  font-size: 16px;
+  line-height: 1.5;
+  height: 100%;
+}
+
+h1,
+h2 {
+  font-family: var(--font-times);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+main {
+  display: flex;
+  gap: 80px;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  margin-block-start: 161px;
+  margin-block-end: 4rem;
+}
+
+@media (max-width: 1280px) {
+  main {
+    padding-inline: 1rem;
+  }
+}
+
+@media (max-width: 840px) {
+  main {
+    flex-direction: column-reverse;
+    margin-block-start: 4rem;
+  }
+}
+
+/* Left Side */
+
+.left {
+  width: 35%;
+  border: 1px solid var(--black-900);
+  padding: 8rem 2.5rem 3rem;
+  border-radius: 2rem;
+  position: relative;
+}
+
+@media (max-width: 1280px) {
+  .left {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .left {
+    width: 50%;
+  }
+}
+
+@media (max-width: 840px) {
+  .left {
+    width: 90%;
+    margin-inline: auto;
+    background-color: oklch(from var(--white-900) l c h / 0.6);
+    margin-block-start: 4rem;
+  }
+}
+
+.circle-text {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.left p {
+  font-size: clamp(1rem, 0.868rem + 0.5634vw, 1.375rem);
+  font-weight: 300;
+}
+
+.left .cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-block-start: 2rem;
+}
+
+.left .cards .card h2 {
+  font-size: clamp(1.75rem, 1.662rem + 0.3756vw, 2rem);
+}
+
+.left .cards .card p {
+  font-size: clamp(0.875rem, 0.6989rem + 0.7512vw, 1.375rem);
+  font-weight: 300;
+}
+
+/* Right Side */
+
+.right {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+@media (max-width: 840px) {
+  .right {
+    width: 90%;
+    margin-inline: auto;
+  }
+}
+
+.right h1 {
+  font-size: clamp(2.75rem, 2.4859rem + 1.1268vw, 3.5rem);
+}
+
+.right p {
+  font-size: clamp(1rem, 0.8239rem + 0.7512vw, 1.5rem);
+}
+
+.right button {
+  cursor: pointer;
+  width: fit-content;
+  border: none;
+  background-color: var(--black-900);
+  color: var(--white-900);
+  padding: 1.5rem 3.5rem;
+  border-radius: 2.5rem;
+  font-family: inherit;
+  font-size: clamp(1rem, 0.868rem + 0.5634vw, 1.375rem);
+  line-height: 1;
+  transition: background-color 300ms ease-in-out;
+}
+
+.right button:focus,
+.right button:hover {
+  background-color: oklch(from var(--black-900) l c h / 0.8);
+}
